@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: var();
+  font-family: "Lexend Deca", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+body {
+   height: 100%;
+    background: url(images/bg-pattern-bottom.svg),
+    url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position:left 50vw top 60vh, right 60vw bottom 60vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  background-color: var(--Dark-cyan);
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+}
+.background-img img{
+    border-radius: 1rem 1rem 0 0;
+    /* background-size: cover; */
+    width:100%;
+}
+
+.container-box{
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.person-img{
+    margin-top: -60px;
+    padding-bottom: 1.2rem;
+}
+.person-img img{
+    border-radius: 100%;
+    border:5px solid rgb(255, 255, 255);
+
+}
+
+.text{
+    width: 100%;
+}
+.text h2{
+    color:var(--Very-dark-desaturated-blue);
+    padding-bottom: .7rem;
+}
+
+.text span{
+    color:var(--Dark-gray);
+    font-weight: lighter;
+    padding-left: .5rem;
+}
+
+.text p{
+    padding-bottom: 2.1rem;
+    color: var(--Dark-gray);
+    font-size: 18px;
+    border-bottom: 1px solid var(--Dark-gray);
+  
+    
+}
+
+.stats {
+    display: flex;
+  padding: 2rem 2rem;
+  width: 100%;
+  justify-content:space-between;
+
+}
+.one-stat{
+    align-items: center;
+    padding-right: 1rem;
+
+}
+.stats h2{
+    color:var(--Very-dark-desaturated-blue);
+    padding-bottom: .5rem;
+}
+.stats p{
+    color: var(--Dark-gray);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media (min-width:800px){
+    body{
+    background: url(images/bg-pattern-bottom.svg),
+    url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position:left 50vw top 48vh, right 55vw bottom 30vh;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: var(--Dark-cyan);
+    }
+
+    .container{
+        padding:1rem;
+        transform: scale(1.2);
+    }
+}
